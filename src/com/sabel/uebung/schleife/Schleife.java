@@ -1,6 +1,6 @@
-package com.sabel.uebung.schleifen;
+package com.sabel.uebung.Schleife;
 
-public class Schleifen {
+public class Schleife {
     //Aufgabe 4: Summieren von allen Werten zwischen a und b, inklusive a und b
     //Klassenmethode (statische Methode), nicht an ein Obejekt gebunden. Zusatz "static"
     //Aufruf: Klassenname.Methodenname
@@ -21,6 +21,7 @@ public class Schleifen {
             if (n % teiler == 0) {  // teilt der Teiler die Zahl n ohne Rest, wenn ja, keine Primzahl
                 return false;
             }
+            teiler++;
         }
         // Wenn alle Teiler "getestet", dann ist n eine Primzahl
         return true;
@@ -33,7 +34,7 @@ public class Schleifen {
         System.out.println(summe + "\n");
 
         // Methode isPrim (Aufgabe 5) aufrufen. Ist 127 eine Primzahl.
-        if (isPrim(127)) {
+        if (isPrim(54645)) {
             System.out.println("Ist Primzahl");
         } else {
             System.out.println("Ist keine Primzahl");
